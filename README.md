@@ -30,7 +30,7 @@ fetch-Lt-sessions
 
 ## **License**
 
-Node fetch session is available under the [Apache License 2.0](https://github.com/LambdaTest/test-at-scale/blob/main/LICENSE). Use it wisely.
+Node fetch sessions is available under the [Apache License 2.0](https://github.com/LambdaTest/node-fetch-session/blob/main/LICENSE). Use it wisely.
 
 ## About LambdaTest
 

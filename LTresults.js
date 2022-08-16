@@ -20,7 +20,6 @@ const ltClient = require("@lambdatest/node-rest-client");
 
         if (!options){
             // using default options
-            console.log("Setting default configurations")
             options = {
                 buildLimt: 20,
                 buildName: process.env.LT_BUILD,

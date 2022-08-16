@@ -2,14 +2,14 @@
 
 # Node fetch session
 
-[![npm version](https://badge.fury.io/js/%40lambdatest%2Fnode-fetch-session.svg)](https://badge.fury.io/js/%40lambdatest%2Fnode-fetch-session.svg)
+[![npm version](https://badge.fury.io/js/%40lambdatest%2Fnode-fetch-sessions.svg)](https://badge.fury.io/js/%40lambdatest%2Fnode-fetch-sessions.svg)
 
-A Node.js JavaScript package to fetch [LambdaTest](https://www.lambdatest.com) automation sessions through [@lambdatest/node-rest-client](https://www.npmjs.com/package/@lambdatest/node-rest-client).
+A command-line interface(CLI) to fetch [LambdaTest](https://www.lambdatest.com) automation session details through [@lambdatest/node-rest-client](https://www.npmjs.com/package/@lambdatest/node-rest-client).
 
 ## Installation
 
 ```
-npm i @lambdatest/node-fetch-session
+npm i -g  @lambdatest/node-fetch-sessions
 ```
 
 ## Example
@@ -25,7 +25,7 @@ export LT_LT_ACCESS_KEY=def
 // The build name whose test session information is to be fetched
 export LT_BUILD=Demo
 
-node LTresults.js
+fetch-Lt-sessions
 ```
 
 ## **License**

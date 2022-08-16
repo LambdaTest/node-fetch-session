@@ -1,8 +1,8 @@
 {
   "name": "@lambdatest/node-fetch-sessions",
-  "version": "1.0.0",
-  "description": "This plugin fetches session details based on build name",
-  "main": "LTresults.js",
+  "version": "1.0.1",
+  "description": "This CLI fetches lambdatest automation test session details based on build name",
+  "main": "index.js",
   "bin": {
     "fetch-LT-sessions": "./index.js"
   },

@@ -2,7 +2,7 @@
 
 # Node fetch sessions
 
-[![npm version](https://badge.fury.io/js/%40lambdatest%2Fnode-fetch-sessions.svg)](https://badge.fury.io/js/%40lambdatest%2Fnode-fetch-sessions.svg)
+[![npm version](https://img.shields.io/npm/v/@lambdatest/node-fetch-sessions.svg?style=flat)](https://www.npmjs.com/package/@lambdatest/node-fetch-sessions)
 
 A command-line interface(CLI) to fetch [LambdaTest](https://www.lambdatest.com) automation session details through [@lambdatest/node-rest-client](https://www.npmjs.com/package/@lambdatest/node-rest-client).
 
@@ -20,7 +20,7 @@ npm i -g  @lambdatest/node-fetch-sessions
 export LT_USERNAME=abc
 
 // The accessKey for the LambdaTest account
-export LT_LT_ACCESS_KEY=def
+export LT_ACCESS_KEY=def
 
 // The build name whose test session information is to be fetched
 export LT_BUILD=Demo

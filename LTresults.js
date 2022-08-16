@@ -4,12 +4,12 @@ const ltClient = require("@lambdatest/node-rest-client");
        
         if (!process.env.LT_ACCESS_KEY || !process.env.LT_USERNAME){
             console.log("Access and username is required")
-            throw new Error("User name and Access is required parameter")
+            throw new Error("User name and Access Key is required parameter")
         }
         
         // read build name from env
         if (!process.env.LT_BUILD){
-            console.log(" Please set Build name to env")
+            console.log(" Please set Build name to env <LT_BUILD>")
             throw new Error ("Build name is required")
         }
 

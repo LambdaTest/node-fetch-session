@@ -1,7 +1,7 @@
 {
   "name": "@lambdatest/node-fetch-sessions",
   "version": "1.0.0",
-  "description": "",
+  "description": "This plugin fetches session details based on build name",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/LambdaTest/node-fetch-session.git"
   },
   "author": "LambdaTest <keys@lambdatest.com>",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/LambdaTest/node-fetch-session/issues"
   },

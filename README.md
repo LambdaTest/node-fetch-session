@@ -2,7 +2,7 @@
 
 # Node fetch sessions
 
-![npm version](https://img.shields.io/npm/v/@lambdatest/node-fetch-sessions.svg?style=flat)
+[![npm version](https://img.shields.io/npm/v/@lambdatest/node-fetch-sessions.svg?style=flat)](https://www.npmjs.com/package/@lambdatest/node-fetch-sessions)
 
 A command-line interface(CLI) to fetch [LambdaTest](https://www.lambdatest.com) automation session details through [@lambdatest/node-rest-client](https://www.npmjs.com/package/@lambdatest/node-rest-client).
 

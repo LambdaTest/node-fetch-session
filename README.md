@@ -1,6 +1,6 @@
 ![LambdaTest Logo](https://www.lambdatest.com/resources/images/logos/logo.svg)
 
-# Node fetch sessions
+# Node fetch session
 
 [![npm version](https://badge.fury.io/js/%40lambdatest%2Fnode-fetch-session.svg)](https://badge.fury.io/js/%40lambdatest%2Fnode-fetch-session.svg)
 

@@ -23,7 +23,7 @@ export LT_USERNAME=abc
 export LT_ACCESS_KEY=def
 
 // The build name whose test session information is to be fetched
-export LT_BUILD=Demo
+export LT_BUILD_NAME=Demo
 
 fetch-Lt-sessions
 ```

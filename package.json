@@ -1,6 +1,6 @@
 {
   "name": "@lambdatest/node-fetch-sessions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This CLI fetches lambdatest automation test session details based on build name",
   "main": "index.js",
   "bin": {

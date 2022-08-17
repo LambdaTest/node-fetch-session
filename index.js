@@ -11,8 +11,8 @@ const fetchSession = async (options) => {
     }
 
     // read build name from env
-    if (!process.env.LT_BUILD) {
-        console.log(" Please set Build name to env <LT_BUILD>");
+    if (!process.env.LT_BUILD_NAME) {
+        console.log(" Please set Build name to env <LT_BUILD_NAME>");
         throw new Error("Build name is required");
     }
 

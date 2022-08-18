@@ -25,7 +25,7 @@ const fetchSession = async (options) => {
         // using default options
         options = {
             buildLimt: 20,
-            buildName: process.env.LT_BUILD,
+            buildName: process.env.LT_BUILD_NAME,
             sessionParams: {
                 limit: 10000,
             },

@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+const yargs = require("yargs/yargs");
+const { hideBin } = require("yargs/helpers");
+const argv = yargs(hideBin(process.argv)).argv;
+const { filterCyTests } = require("./lib/helpers/utils");
+const { fetchCyEnhancedReport } = require("./lib/helpers/utils/cypress");
+
 const ltClient = require("@lambdatest/node-rest-client");
 
 const fetchSession = async (options) => {
@@ -31,8 +37,29 @@ const fetchSession = async (options) => {
             },
         };
     }
+
+    // fetch enhanced cy tests data
+    const fetchEnhancedCyReport = argv && argv.enhancedCyReport;
+
     const data = await autoClient.getSessionsOfBuild(options);
-    console.log(JSON.stringify(data));
+
+    if (!fetchEnhancedCyReport) {
+        console.log(JSON.stringify(data));
+        return;
+    }
+
+    // fetch cypress enhanced test data
+    if (fetchEnhancedCyReport) {
+        const cyTests = filterCyTests(data.data.data);
+        if (cyTests.length == 0) {
+            console.error(
+                `No cypress tests found in the build with name ${process.env.LT_BUILD_NAME}`
+            );
+            return;
+        }
+        const cyReport = await fetchCyEnhancedReport(cyTests, autoClient);
+        console.log(JSON.stringify(cyReport));
+    }
     return;
 };
 

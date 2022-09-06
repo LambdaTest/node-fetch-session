@@ -25,7 +25,11 @@ export LT_ACCESS_KEY=def
 // The build name whose test session information is to be fetched
 export LT_BUILD_NAME=Demo
 
+## Retrieve sessions list
 fetch-Lt-sessions
+
+## Support for enhanced cypress reporting
+fetch-Lt-sessions --enhancedCyReport
 ```
 
 ## **License**

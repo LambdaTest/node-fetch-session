@@ -1,6 +1,6 @@
 {
   "name": "@lambdatest/node-fetch-sessions",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This CLI fetches lambdatest automation test session details based on build name",
   "main": "index.js",
   "bin": {
@@ -27,6 +27,8 @@
     "cli"
   ],
   "dependencies": {
-    "@lambdatest/node-rest-client": "^1.0.4"
+    "@lambdatest/node-rest-client": "^1.0.5",
+    "lodash": "^4.17.21",
+    "yargs": "^17.5.1"
   }
 }

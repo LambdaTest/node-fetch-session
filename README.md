@@ -39,7 +39,7 @@ $ set LT_BUILD_NAME="<Add Build Name>"
 
 #### Step 4. Retrieve the list of automation sessions
 ```
-$ fetch-Lt-sessions
+$ lt-json-reporter run 
 ```
 #### Expected Output
 ```
@@ -80,7 +80,7 @@ $ fetch-Lt-sessions
 ```
 #### Note: In order to retreive the list of only Cypress tests run the command below
 ```
-$ fetch-Lt-sessions --enhancedCyReport
+$ lt-json-reporter run —cypress
 ```
 #### Expected Output
 ```

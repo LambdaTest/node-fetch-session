@@ -1,14 +1,11 @@
 #!/usr/bin/env node
 
-const yargs = require("yargs/yargs");
-const { hideBin } = require("yargs/helpers");
-const argv = yargs(hideBin(process.argv)).argv;
 const { filterCyTests } = require("./lib/helpers/utils");
 const { fetchCyEnhancedReport } = require("./lib/helpers/utils/cypress");
 
 const ltClient = require("@lambdatest/node-rest-client");
 
-const fetchSession = async (options) => {
+const fetchSession = async (argv) => {
     // read credentials from env
 
     if (!process.env.LT_ACCESS_KEY || !process.env.LT_USERNAME) {
@@ -27,19 +24,17 @@ const fetchSession = async (options) => {
         accessKey: process.env.LT_ACCESS_KEY,
     });
 
-    if (!options) {
-        // using default options
-        options = {
+    // using default options
+        let options = {
             buildLimt: 20,
             buildName: process.env.LT_BUILD_NAME,
             sessionParams: {
                 limit: 10000,
             },
         };
-    }
 
-    // fetch enhanced cy tests data
-    const fetchEnhancedCyReport = argv && argv.enhancedCyReport;
+    // fetch enhanced cypress tests data
+    const fetchEnhancedCyReport = argv && argv.cypress;
 
     const data = await autoClient.getSessionsOfBuild(options);
 
@@ -63,5 +58,14 @@ const fetchSession = async (options) => {
     return;
 };
 
-fetchSession();
-module.exports = fetchSession;
+const argv = require("yargs")
+.usage("Usage: $0 <command> [options]")
+.command("run", "Fetches LambdaTest automation session details", {}, function (argv) {
+    fetchSession(argv);
+  })
+  .option('cypress', {
+    alias: 'cy',
+    description: 'Filter cypress test session details'
+  })
+  .parse();
+

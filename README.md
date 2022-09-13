@@ -80,7 +80,7 @@ $ lt-json-reporter run
 ```
 #### Note: In order to retreive the list of only Cypress tests run the command below
 ```
-$ lt-json-reporter run —cypress
+$ lt-json-reporter run --cypress
 ```
 #### Expected Output
 ```

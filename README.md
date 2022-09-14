@@ -39,7 +39,7 @@ $ set LT_BUILD_NAME="<Add Build Name>"
 
 #### Step 4. Retrieve the list of automation sessions
 ```
-$ lt-json-reporter run 
+$ lt-reporter run
 ```
 #### Expected Output
 ```
@@ -80,7 +80,7 @@ $ lt-json-reporter run
 ```
 #### Note: In order to retreive the list of only Cypress tests run the command below
 ```
-$ lt-json-reporter run --cypress
+$ lt-reporter run --cypress
 ```
 #### Expected Output
 ```

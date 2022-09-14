@@ -4,7 +4,7 @@
   "description": "This CLI fetches lambdatest automation test session details based on build name",
   "main": "index.js",
   "bin": {
-    "lt-json-reporter": "./index.js"
+    "lt-reporter": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

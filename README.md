@@ -1,12 +1,10 @@
 
-![LambdaTest Logo](https://www.lambdatest.com/resources/images/logos/logo.svg)
-
 # Node fetch sessions
 [![npm version](https://img.shields.io/npm/v/@lambdatest/node-fetch-sessions.svg?style=flat)](https://www.npmjs.com/package/@lambdatest/node-fetch-sessions)
 
-A command-line interface(CLI) to fetch [LambdaTest](https://automation.lambdatest.com/build) automation session details through [@lambdatest/node-rest-client](https://www.npmjs.com/package/@lambdatest/node-rest-client).
+A command-line interface(CLI) to fetch TestMu AI automation session details through [@lambdatest/node-rest-client](https://www.npmjs.com/package/@lambdatest/node-rest-client).
 
-### Steps to fetch LambdaTest automation session details
+### Steps to fetch TestMu AI automation session details
 
 #### Step 1. Installation
 
@@ -14,7 +12,7 @@ A command-line interface(CLI) to fetch [LambdaTest](https://automation.lambdates
 $ npm i -g  @lambdatest/node-fetch-sessions
 ```
 
-#### Step 2. Set LambdaTest Username and Access Key in environment variables.
+#### Step 2. Set TestMu AI Username and Access Key in environment variables.
  
 For Linux/macOS:
 ```
@@ -27,7 +25,7 @@ $ set LT_USERNAME="YOUR_USERNAME"
 $ set LT_ACCESS_KEY="YOUR ACCESS KEY"
 ```
 
-#### Step 3. Set Build Name for which the test session information is required
+#### Step 3. Set the Build Name for which the test session information is required
 For Linux/macOS:
 ```
 $ export LT_BUILD_NAME="<Add Build Name>"
@@ -117,23 +115,24 @@ $ lt-reporter run --cypress
 ```
 No cypress tests found in the build with name <Your Build Name>
 ```
+
+## LambdaTest is Now TestMu AI
+
+On **January 12, 2026**, [LambdaTest evolved to TestMu AI](https://www.testmuai.com/lambdatest-is-now-testmuai/), the world's first fully autonomous **Agentic AI Quality Engineering Platform**.
+
+Same team. Same infrastructure. Same customer accounts. All existing LambdaTest logins, scripts, capabilities, and integrations continue to work without change.
+
+👉 Find the new home for [LambdaTest](https://www.testmuai.com).
+
+### How LambdaTest Evolved into TestMu AI
+
+In 2017, we launched LambdaTest with a simple mission: make testing fast, reliable, and accessible. As LambdaTest grew, we expanded into Test Intelligence, Visual Regression Testing, Accessibility Testing, API Testing, and Performance Testing, covering the full depth of the testing lifecycle.
+
+As software development entered the AI era, testing had to evolve, too. We rebuilt the architecture to be AI-native from the ground up, with autonomous agents that **plan, author, execute, analyze, and optimize tests** while keeping humans in the loop. The platform integrates with your repos, CI, IDEs, and terminals, continuously learning from every code change and development signal.
+
+That evolution earned a new name: **TestMu AI**, built for an AI-first future of quality engineering. TestMu is not a new name for us. It is the name of our annual community conference, which has brought together 100,000+ quality engineers to discuss how AI would reshape testing, long before that became an industry norm.
+
+What started as a high-performance cloud testing platform has transformed into an AI-native, multi-agent system powering a connected, end-to-end quality layer. That evolution defined a new identity: LambdaTest evolved into TestMu AI, built for an AI-first future of quality engineering.
+
 ### License
 Node fetch sessions is available under the [Apache License 2.0.](https://github.com/LambdaTest/node-fetch-session/blob/main/LICENSE) Use it wisely.
-
-### About LambdaTest
-[LambdaTest](https://www.lambdatest.com/) is a leading test execution and orchestration platform that is fast, reliable, scalable, and secure. It allows users to run both manual and automated testing of web and mobile apps across 3000+ different browsers, operating systems, and real device combinations. Using LambdaTest, businesses can ensure quicker developer feedback and hence achieve faster go to market. Over 500 enterprises and 1 Million + users across 130+ countries rely on LambdaTest for their testing needs.
-
-#### Features
-- Run Selenium, Cypress, Puppeteer, Playwright, and Appium automation tests across 3000+ real desktop and mobile environments.
-- Real-time cross browser testing on 3000+ environments.
-- Test on Real device cloud
-- Blazing fast test automation with HyperExecute
-- Accelerate testing, shorten job times and get faster feedback on code changes with Test At Scale.
-- Smart Visual Regression Testing on cloud
-- 120+ third-party integrations with your favorite tool for CI/CD, Project Management, Codeless Automation, and more.
-- Automated Screenshot testing across multiple browsers in a single click.
-- Local testing of web and mobile apps.
-- Online Accessibility Testing across 3000+ desktop and mobile browsers, browser versions, and operating systems.
-- Geolocation testing of web and mobile apps across 53+ countries.
-- LT Browser - for responsive testing across 50+ pre-installed mobile, tablets, desktop, and laptop viewports
-

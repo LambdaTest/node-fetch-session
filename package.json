@@ -27,7 +27,7 @@
     "cli"
   ],
   "dependencies": {
-    "@lambdatest/node-rest-client": "^1.0.5",
+    "@lambdatest/node-rest-client": "^2.0.2",
     "lodash": "^4.17.21",
     "yargs": "^17.5.1"
   }
